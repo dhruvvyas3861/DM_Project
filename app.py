@@ -70,10 +70,9 @@ def map_feature(value, mapping, feature_name):
     except KeyError:
         raise ValueError(f"Invalid value for {feature_name}: {value}")
 
-@app.route('/hello', methods=['GET'])
-def test():
-    return jsonify({"message": "API is working"}), 200
-
+@app.route('/', methods=['GET'])
+def home():
+    return "Welcome to the Cricket Prediction API!"
 
 # Define a route for making predictions
 @app.route('/predict', methods=['POST'])
