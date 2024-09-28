@@ -96,5 +96,8 @@ def predict():
     
     return jsonify({'result': winning_percentage})
 
+    @app.route('/test', methods=['GET'])
+   def test():
+       return jsonify({"message": "API is working"}), 200
 # if __name__ == '__main__':
     app.run()
