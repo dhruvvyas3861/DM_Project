@@ -1,0 +1,6 @@
+   streamlit
+   scikit-learn
+   pandas
+   numpy
+   flask
+   flask-cors
